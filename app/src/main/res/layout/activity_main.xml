@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.shaik.trivia.MainActivity">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/radio"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/rmonth"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Month-Date"/>
+
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ryear"
+            android:text="Year"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/rmath"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Math"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get trivia"
+        android:id="@+id/button"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="number"
+            android:visibility="gone"
+            android:id="@+id/tnum"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:hint="month"
+            android:id="@+id/tmonth"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tdate"
+            android:hint="date"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tyear"
+            android:hint="year"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/hello"
+        android:textColor="#000"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+         />
+
+</LinearLayout>
